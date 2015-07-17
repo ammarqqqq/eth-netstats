@@ -23,6 +23,7 @@ var typeMap = {
     png:        [GLOBSTAR + '.png'],
     jpg:        [GLOBSTAR + '.jpg', GLOBSTAR + '.jpeg'],
     gif:        [GLOBSTAR + '.gif'],
+    ico:        [GLOBSTAR + '.ico'],
 
     // extras
     extras:   [GLOBSTAR]
@@ -63,7 +64,7 @@ module.exports = {
     templates:  typeMap.jade,
     styles:     typeMap.css.concat(typeMap.less),
     scripts:    typeMap.js.concat(typeMap.coffee),
-    images:     typeMap.png.concat(typeMap.gif).concat(typeMap.jpg),
+    images:     typeMap.png.concat(typeMap.gif).concat(typeMap.jpg).concat(typeMap.ico),
     extras:     typeMap.extras
   },
 
